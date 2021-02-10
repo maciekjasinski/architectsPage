@@ -20,12 +20,12 @@ export function Navbar() {
         <>
             {isMobile ?
                 <MobileWrapper>
-                    <IconButton onClick={() => setIsDrawerOpen(!isDrawerOpen)}>
-                        {isDrawerOpen ? <Close /> : <Menu />}
-                    </IconButton>
                     <Link to="/">
                         <img src={Logo} alt="Logo" />
                     </Link>
+                    <IconButton onClick={() => setIsDrawerOpen(!isDrawerOpen)}>
+                        {isDrawerOpen ? <Close /> : <Menu />}
+                    </IconButton>
                 </MobileWrapper>
             :
                 <Container>

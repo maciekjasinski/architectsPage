@@ -17,9 +17,9 @@ export const FlexWrapper = styled.div`
 
 export const StyledLink = styled(NavLink).attrs({ activeClassName })`
     && {
-        margin-left: 64px;
+        margin-left: ${({ theme }) => theme.spacing * 16}px;
         text-transform: uppercase;
-        color: black;
+        color: ${({ theme }) => theme.colors.primary};
         text-decoration: none;
         font-size: 14px;
         display: inline-block;
@@ -40,5 +40,5 @@ export const MobileWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 16px;
+    padding-left: ${({ theme }) => theme.spacing * 4}px;
 `;
