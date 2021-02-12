@@ -4,6 +4,7 @@ export const Wrapper = styled.div`
     background-color: ${({ theme }) => theme.colors.lightBlack};
     padding: ${({ theme }) => theme.spacing * 15}px 0 0;
     color: ${({ theme }) => theme.colors.white};
+    margin-top: ${({ theme }) => theme.spacing * 6}px;
 `;
 
 export const GridWrapper = styled.div`
