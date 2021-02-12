@@ -38,7 +38,7 @@ export function Navbar() {
                             <StyledLink to="/gallery">Gallery</StyledLink>
                             <StyledLink to="/projects">Projects</StyledLink>
                             <StyledLink to="/certificates">Certificates</StyledLink>
-                            <StyledLink to="/contacts">Contacts</StyledLink>
+                            <StyledLink to="/contact">Contact</StyledLink>
                         </div>
                     </FlexWrapper>
                 </Container>
