@@ -2,7 +2,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { Navbar } from './Components/Navbar/Navbar';
 import { Footer } from './Components/Footer/Footer';
-import { Home } from './Home/Home.js';
+import { Home } from './Home/Home';
+import { Contact } from './Contact/Contact';
 import { theme } from './theme';
 
 function App() {
@@ -14,8 +15,8 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/gallery">
-            <div>Gallery</div>
+          <Route path="/contact">
+            <Contact />
           </Route>
         </Switch>
         <Footer />
