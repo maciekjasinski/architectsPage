@@ -25,9 +25,6 @@ export const StyledLink = styled(NavLink).attrs({ activeClassName })`
         display: inline-block;
         height: 30px;
         line-height: 30px;
-
-    
-        
     }
     &.${activeClassName} {
         border-top: 1px solid black;

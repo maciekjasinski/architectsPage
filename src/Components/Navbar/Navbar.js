@@ -20,7 +20,7 @@ export function Navbar() {
         <>
             {isMobile ?
                 <MobileWrapper>
-                    <Link to="/">
+                    <Link to="/home">
                         <img src={Logo} alt="Logo" />
                     </Link>
                     <IconButton onClick={() => setIsDrawerOpen(!isDrawerOpen)}>
@@ -30,11 +30,11 @@ export function Navbar() {
             :
                 <Container>
                     <FlexWrapper>
-                        <Link to="/">
+                        <Link to="/home">
                             <img src={Logo} alt="Logo" />
                         </Link>
                         <div>
-                            <StyledLink to="/">Home</StyledLink>
+                            <StyledLink to="/home">Home</StyledLink>
                             <StyledLink to="/gallery">Gallery</StyledLink>
                             <StyledLink to="/projects">Projects</StyledLink>
                             <StyledLink to="/certificates">Certificates</StyledLink>
