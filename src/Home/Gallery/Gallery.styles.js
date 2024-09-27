@@ -34,6 +34,7 @@ export const Button = styled.button`
     color: ${({ theme }) => theme.colors.white};
     text-transform: uppercase;
     margin-bottom: ${({ theme }) => theme.spacing * 6}px;
+    cursor: pointer;
 `;
 
 export const Wrapper = styled.div`

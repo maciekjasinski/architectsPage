@@ -6,6 +6,9 @@ import { Button } from '../Gallery/Gallery.styles';
 import { Wrapper, StyledTextField, FormInfo } from './Contact.styles';
 
 const validationSchema = yup.object().shape({
+    name: yup
+        .string()
+        .required(),
     phone: yup
         .number()
         .min(9)
@@ -44,6 +47,7 @@ export function Contact() {
                             fullWidth
                         />
                         <StyledTextField 
+                            id="phone"
                             name="phone"
                             variant="outlined"
                             placeholder="Phone"
@@ -51,12 +55,14 @@ export function Contact() {
                             fullWidth
                         />
                         <StyledTextField 
+                            id="email"
                             name="email"
                             variant="outlined"
-                            placeholder="Name"
+                            placeholder="Email"
                             fullWidth
                         />
                         <StyledTextField 
+                            id="message"
                             name="message"
                             variant="outlined"
                             placeholder="Message"
